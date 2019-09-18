@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import CoverView from "../cover/CoverPage";
 import ProfileView from "./profile/profile";
 import StylesView from "./style/Styles";
@@ -8,54 +8,40 @@ import AccessoriesView from "./accessories/Accessories";
 import ContactView from "../contact/Contact";
 import axios from "axios";
 
-class MaxineViewPage extends React.Component {
-  state = {
-    profile: {
-      name: "",
-      imageUrl: "",
-      info:''
-    },
-    shirts: null,
-    trousers: null,
-    accessories: null
-  };
+const MaxineViewPage = () => {
+  const [shirts, updateShirts] = useState([]);
+  const [trousers, updatetrousers] = useState([]);
+  const [accessories, updateAccessories] = useState([]);
+  const [profile, updateProfile] = useState({});
 
-  componentDidMount() {
+  useEffect(() => {
+    console.log('data');
     axios
       .get("http://15.206.16.194:3000/v2/api/psg/user/mobile/9959475551")
       .then(data => {
-        this.setState({ shirts: data["data"]["details"][0]["recShirts"] });
-        this.setState({ trousers: data["data"]["details"][0]["recTrousers"] });
-        this.setState({
-          accessories: data["data"]["details"][0]["recAccessories"]
+        updateShirts(data["data"]["details"][0]["recShirts"]);
+        updatetrousers(data["data"]["details"][0]["recTrousers"]);
+        updateAccessories(data["data"]["details"][0]["recAccessories"]);
+        updateProfile({
+          name: data["data"]["details"][0]["firstName"],
+          imageUrl: data["data"]["details"][0]["images"][0],
+          info: data["data"]["details"][0]["brief"]
         });
-        this.setState({
-          profile: {
-            name: data["data"]["details"][0]["firstName"],
-            imageUrl: data["data"]["details"][0]["images"][0],
-            info:data["data"]["details"][0]["brief"]
-          }
-        });
-      
       })
       .catch(error => {});
-  }
+  }, []);
 
-  render() {
-    return (
-      <React.Fragment>
-        <CoverView />
-        <ProfileView profile={this.state.profile} />
-        <StylesView />
-        {this.state.shirts && <ShirtsView data={this.state.shirts} />}
-        {this.state.trousers && <TrouserView data={this.state.trousers} />}
-        {this.state.accessories && (
-          <AccessoriesView data={this.state.accessories} />
-        )}
-        <ContactView />
-      </React.Fragment>
-    );
-  }
-}
+  return (
+    <React.Fragment>
+      <CoverView />
+      {profile && <ProfileView profile={profile} />}
+      <StylesView />
+      {shirts && <ShirtsView data={shirts} />}
+      {trousers && <TrouserView data={trousers} />}
+      {accessories && <AccessoriesView data={accessories} />}
+      <ContactView />
+    </React.Fragment>
+  );
+};
 
 export default MaxineViewPage;

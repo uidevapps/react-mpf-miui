@@ -10,6 +10,7 @@ import MaxineViewPage from "./maxine/Maxine";
 import StylePage from "./style/Style";
 import CoverPage from "./cover/CoverPage";
 import ContactPage from "./contact/Contact";
+
 class MainPage extends React.Component {
   render() {
     return (
