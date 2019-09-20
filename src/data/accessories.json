@@ -1,0 +1,571 @@
+{
+    "status": true,
+    "message": "success",
+    "data": [
+        {
+            "_id": "5b4ee8b5dcf2b564ee982505",
+            "discountedPrice": 989,
+            "price": 1099,
+            "productName": "NECKTIE",
+            "subCategory": "Tie & Bows",
+            "category": "Accessories",
+            "images": [
+                "5b4f13e769c739560bb2669d.jpg"
+            ],
+            "updatedAt": "2018-10-25T04:20:39.188Z"
+        },
+        {
+            "_id": "5b4eea52dcf2b564ee982509",
+            "discountedPrice": 899,
+            "price": 999,
+            "productName": "Diogonal stripes Necktie",
+            "subCategory": "Tie & Bows",
+            "category": "Accessories",
+            "images": [
+                "5b4f214369c739560bb266a5.jpg"
+            ],
+            "updatedAt": "2018-10-25T04:20:39.189Z"
+        },
+        {
+            "_id": "5b4eea8ddcf2b564ee98250b",
+            "discountedPrice": 600,
+            "price": 1000,
+            "productName": "LIght pink silk Necktie",
+            "subCategory": "Tie & Bows",
+            "category": "Accessories",
+            "images": [
+                "5b4f340769c739560bb266a7.jpg"
+            ],
+            "updatedAt": "2018-10-25T04:20:39.190Z"
+        },
+        {
+            "_id": "5b502eec69c739560bb266b2",
+            "discountedPrice": 899,
+            "price": 999,
+            "productName": "BLUE STRIPES BOW TIE",
+            "subCategory": "Tie & Bows",
+            "category": "Accessories",
+            "images": [
+                "5b502eea69c739560bb266b1.jpg"
+            ],
+            "updatedAt": "2018-10-25T04:20:39.192Z"
+        },
+        {
+            "_id": "5b5031bd69c739560bb266b4",
+            "discountedPrice": 854,
+            "price": 949,
+            "productName": "GREEN SUNGLASS PRINTS  BOW",
+            "subCategory": "Tie & Bows",
+            "category": "Accessories",
+            "images": [
+                "5b5031bb69c739560bb266b3.jpg"
+            ],
+            "updatedAt": "2018-10-25T04:20:39.193Z"
+        },
+        {
+            "_id": "5b50324469c739560bb266b6",
+            "discountedPrice": 809,
+            "price": 899,
+            "productName": "SILVER POLKA DOT PRINT BOW TIE",
+            "subCategory": "Tie & Bows",
+            "category": "Accessories",
+            "images": [
+                "5b50324369c739560bb266b5.jpg"
+            ],
+            "updatedAt": "2018-10-25T04:20:39.193Z"
+        },
+        {
+            "_id": "5b4ee9d3dcf2b564ee982507",
+            "discountedPrice": 1079,
+            "price": 1199,
+            "productName": "Blue Necktie",
+            "subCategory": "Tie & Bows",
+            "category": "Accessories",
+            "images": [
+                "5b4f13ae69c739560bb2669b.jpg"
+            ],
+            "updatedAt": "2018-10-25T04:20:39.189Z"
+        },
+        {
+            "_id": "5d248499b524ad03353e2e2e",
+            "discountedPrice": 250,
+            "price": 250,
+            "productName": "Multicolor Pocket Square",
+            "subCategory": "Pocket Squares",
+            "category": "Accessories",
+            "images": [
+                "5d248459b524ad03353e2e2d.jpg"
+            ],
+            "updatedAt": "2019-07-09T12:12:09.622Z"
+        },
+        {
+            "_id": "5d248443b524ad03353e2e2c",
+            "productName": "Multicolor Pocket Square",
+            "discountedPrice": 250,
+            "price": 250,
+            "subCategory": "Pocket Squares",
+            "category": "Accessories",
+            "images": [
+                "5d248401b524ad03353e2e2b.jpg"
+            ],
+            "updatedAt": "2019-07-09T12:10:43.791Z"
+        },
+        {
+            "_id": "5b5032d369c739560bb266b8",
+            "discountedPrice": 809,
+            "price": 899,
+            "productName": "DARK PINK SHADE SILK POCKET SQUARE",
+            "subCategory": "Pocket Squares",
+            "category": "Accessories",
+            "images": [
+                "5b5032d169c739560bb266b7.jpg"
+            ],
+            "updatedAt": "2018-10-25T04:20:39.194Z"
+        },
+        {
+            "_id": "5b50356669c739560bb266ba",
+            "discountedPrice": 809,
+            "price": 899,
+            "productName": "BLACK POLKA DOT POCKET SQUARE",
+            "subCategory": "Pocket Squares",
+            "category": "Accessories",
+            "images": [
+                "5b50356269c739560bb266b9.jpg"
+            ],
+            "updatedAt": "2018-10-25T04:20:39.194Z"
+        },
+        {
+            "_id": "5b5036e069c739560bb266bc",
+            "discountedPrice": 250,
+            "price": 500,
+            "productName": "POLKA DOT DARK BEIGE POCKET SQUARE",
+            "subCategory": "Pocket Squares",
+            "category": "Accessories",
+            "images": [
+                "5b5036de69c739560bb266bb.jpg"
+            ],
+            "updatedAt": "2018-10-25T04:20:39.195Z"
+        },
+        {
+            "_id": "5d2483a4b524ad03353e2e2a",
+            "productName": "Multicolor Pocket Square",
+            "discountedPrice": 250,
+            "price": 250,
+            "subCategory": "Pocket Squares",
+            "category": "Accessories",
+            "images": [
+                "5d248347b524ad03353e2e29.jpg"
+            ],
+            "updatedAt": "2019-07-09T12:08:04.317Z"
+        },
+        {
+            "_id": "5d2482a1b524ad03353e2e27",
+            "productName": "Multicolor Pocket Square",
+            "discountedPrice": 250,
+            "price": 250,
+            "subCategory": "Pocket Squares",
+            "category": "Accessories",
+            "images": [
+                "5d24821fb524ad03353e2e26.jpg"
+            ],
+            "updatedAt": "2019-07-09T12:03:45.234Z"
+        },
+        {
+            "_id": "5d2481a3b524ad03353e2e25",
+            "discountedPrice": 250,
+            "price": 250,
+            "productName": "Multicolor Pocket Square",
+            "subCategory": "Pocket Squares",
+            "category": "Accessories",
+            "images": [
+                "5d248148b524ad03353e2e24.jpg"
+            ],
+            "updatedAt": "2019-07-09T11:59:31.900Z"
+        },
+        {
+            "_id": "5d24813db524ad03353e2e23",
+            "discountedPrice": 250,
+            "price": 250,
+            "productName": "Multicolor Pocket Fold",
+            "subCategory": "Pocket Squares",
+            "category": "Accessories",
+            "images": [
+                "5d2480dab524ad03353e2e22.jpg"
+            ],
+            "updatedAt": "2019-07-09T11:57:49.009Z"
+        },
+        {
+            "_id": "5d247fb0b524ad03353e2e20",
+            "discountedPrice": 250,
+            "price": 250,
+            "productName": "Multicolor Pocket Square",
+            "subCategory": "Pocket Squares",
+            "category": "Accessories",
+            "images": [
+                "5d247f92b524ad03353e2e1f.jpg"
+            ],
+            "updatedAt": "2019-07-09T12:05:34.662Z"
+        },
+        {
+            "_id": "5d2484f8b524ad03353e2e30",
+            "discountedPrice": 250,
+            "price": 250,
+            "productName": "Multicolor Pocket Square",
+            "subCategory": "Pocket Squares",
+            "category": "Accessories",
+            "images": [
+                "5d2484aeb524ad03353e2e2f.jpg"
+            ],
+            "updatedAt": "2019-07-09T12:13:44.434Z"
+        },
+        {
+            "_id": "5b5038b369c739560bb266be",
+            "discountedPrice": 1169,
+            "price": 1299,
+            "productName": "PURPLE COLOR ROUND CUFFLINKS",
+            "subCategory": "Cuff Links",
+            "category": "Accessories",
+            "images": [
+                "5b5038aa69c739560bb266bd.jpg"
+            ],
+            "updatedAt": "2019-07-09T10:37:45.378Z"
+        },
+        {
+            "_id": "5b50444769c739560bb266d4",
+            "discountedPrice": 600,
+            "price": 800,
+            "productName": "SILVER CUFF LINKS WITH BLUE EDGE DETAILING",
+            "subCategory": "Cuff Links",
+            "category": "Accessories",
+            "images": [
+                "5b50444469c739560bb266d3.jpg"
+            ],
+            "updatedAt": "2018-10-25T04:20:39.197Z"
+        },
+        {
+            "_id": "5b4eec3cdcf2b564ee98250e",
+            "discountedPrice": 1259,
+            "price": 1399,
+            "productName": "Leather black Belt",
+            "subCategory": "Belts",
+            "category": "Accessories",
+            "images": [
+                "5b502dd569c739560bb266af.jpg"
+            ],
+            "updatedAt": "2018-10-25T04:20:39.190Z"
+        },
+        {
+            "_id": "5b4f15f169c739560bb266a2",
+            "discountedPrice": 1169,
+            "price": 1299,
+            "productName": "Brown belt",
+            "subCategory": "Belts",
+            "category": "Accessories",
+            "images": [
+                "5b4f1b7369c739560bb266a3.jpg"
+            ],
+            "updatedAt": "2018-10-25T04:20:39.191Z"
+        },
+        {
+            "_id": "5b50465b69c739560bb266e0",
+            "discountedPrice": 4049,
+            "price": 4499,
+            "productName": "BLACK GLOSSY FORMAL  SHOES",
+            "subCategory": "Shoes",
+            "category": "Accessories",
+            "images": [
+                "5b50465769c739560bb266de.jpg"
+            ],
+            "updatedAt": "2018-10-25T04:20:39.199Z"
+        },
+        {
+            "_id": "5b90dbe9d530cc28d9d08b3a",
+            "discountedPrice": 2500,
+            "price": 2500,
+            "productName": "Stylish Brown Shoes",
+            "subCategory": "Shoes",
+            "category": "Accessories",
+            "images": [
+                "5b90db38d530cc28d9d08b36.jpg",
+                "5b90db38d530cc28d9d08b37.jpg",
+                "5b90db38d530cc28d9d08b38.jpg",
+                "5b90db38d530cc28d9d08b39.jpg"
+            ],
+            "updatedAt": "2018-10-25T04:20:39.264Z"
+        },
+        {
+            "_id": "5b5044ce69c739560bb266d6",
+            "discountedPrice": 4499,
+            "price": 4999,
+            "productName": "BROWN LEATHER FORMAL SHOES",
+            "subCategory": "Shoes",
+            "category": "Accessories",
+            "images": [
+                "5b5044cb69c739560bb266d5.jpg"
+            ],
+            "updatedAt": "2018-10-25T04:20:39.198Z"
+        },
+        {
+            "_id": "5b5048c569c739560bb266f1",
+            "discountedPrice": 8999,
+            "price": 9999,
+            "productName": "BLACK METAL CHAIN ANALOG WATCH",
+            "subCategory": "Watches",
+            "category": "Accessories",
+            "images": [
+                "5b5048c369c739560bb266f0.jpg"
+            ],
+            "updatedAt": "2018-10-25T04:20:39.201Z"
+        },
+        {
+            "_id": "5b50473e69c739560bb266e8",
+            "discountedPrice": 6299,
+            "price": 8999,
+            "productName": "BROWN BELT ANALOG WATCH",
+            "subCategory": "Watches",
+            "category": "Accessories",
+            "images": [
+                "5b50473c69c739560bb266e7.jpg"
+            ],
+            "updatedAt": "2018-10-25T04:20:39.200Z"
+        },
+        {
+            "_id": "5b50511f9e9cf339d05e3935",
+            "discountedPrice": 2339,
+            "price": 2599,
+            "productName": "BLACK WALLET",
+            "subCategory": "Wallets",
+            "category": "Accessories",
+            "images": [
+                "5b50511c9e9cf339d05e3934.jpg"
+            ],
+            "updatedAt": "2018-10-25T04:20:39.203Z"
+        },
+        {
+            "_id": "5b5050d49e9cf339d05e3933",
+            "discountedPrice": 2699,
+            "price": 2999,
+            "productName": "BROWN WALLET",
+            "subCategory": "Wallets",
+            "category": "Accessories",
+            "images": [
+                "5b5050d29e9cf339d05e3932.jpg"
+            ],
+            "updatedAt": "2018-10-25T04:20:39.203Z"
+        },
+        {
+            "_id": "5b6034acfc55693014a383f9",
+            "discountedPrice": 695,
+            "price": 695,
+            "productName": "Scott white T shirt",
+            "subCategory": "Others",
+            "category": "Accessories",
+            "images": [
+                "5b6034a9fc55693014a383f8.jpg"
+            ],
+            "updatedAt": "2018-10-25T04:20:39.233Z"
+        },
+        {
+            "_id": "5b603521fc55693014a383fb",
+            "discountedPrice": 695,
+            "price": 695,
+            "productName": "Scott black with white tip T shirt",
+            "subCategory": "Others",
+            "category": "Accessories",
+            "images": [
+                "5b60351dfc55693014a383fa.jpg"
+            ],
+            "updatedAt": "2018-10-25T04:20:39.234Z"
+        },
+        {
+            "_id": "5b6035b1fc55693014a383fd",
+            "discountedPrice": 695,
+            "price": 695,
+            "subCategory": "Others",
+            "category": "Accessories",
+            "productName": "Scott maroon with white tip T shirt",
+            "images": [
+                "5b6035adfc55693014a383fc.jpg"
+            ],
+            "updatedAt": "2018-10-25T04:20:39.234Z"
+        },
+        {
+            "_id": "5b507b7d9e9cf339d05e39a2",
+            "discountedPrice": 695,
+            "price": 695,
+            "productName": "Scott Black T shirt",
+            "subCategory": "Others",
+            "category": "Accessories",
+            "images": [
+                "5b507bff9e9cf339d05e39a3.jpg"
+            ],
+            "updatedAt": "2018-10-25T04:20:39.213Z"
+        },
+        {
+            "_id": "5b6036b6fc55693014a38401",
+            "discountedPrice": 695,
+            "price": 695,
+            "productName": "Scott cream with red tip T shirt",
+            "subCategory": "Others",
+            "category": "Accessories",
+            "images": [
+                "5b6036b1fc55693014a38400.jpg"
+            ],
+            "updatedAt": "2018-10-25T04:20:39.235Z"
+        },
+        {
+            "_id": "5b603716fc55693014a38403",
+            "discountedPrice": 695,
+            "price": 695,
+            "productName": "Scott yellow with black tip T shirt",
+            "subCategory": "Others",
+            "category": "Accessories",
+            "images": [
+                "5b603714fc55693014a38402.jpg"
+            ],
+            "updatedAt": "2019-06-10T12:43:17.386Z"
+        },
+        {
+            "_id": "5b603790fc55693014a38405",
+            "discountedPrice": 695,
+            "price": 695,
+            "productName": "Scott charcoal grey with white tip T shirt",
+            "subCategory": "Others",
+            "category": "Accessories",
+            "images": [
+                "5b60378cfc55693014a38404.jpg"
+            ],
+            "updatedAt": "2018-10-25T04:20:39.236Z"
+        },
+        {
+            "_id": "5b603929fc55693014a38407",
+            "discountedPrice": 695,
+            "price": 695,
+            "productName": "Scott Indian blue with black tip T shirt",
+            "subCategory": "Others",
+            "category": "Accessories",
+            "images": [
+                "5b603925fc55693014a38406.jpg"
+            ],
+            "updatedAt": "2018-10-25T04:20:39.237Z"
+        },
+        {
+            "_id": "5b869018449a4d62e61c57bf",
+            "discountedPrice": 695,
+            "price": 695,
+            "productName": "SCOTT LIGHT GREY WITH BLACK TIP T-SHIRT",
+            "subCategory": "Others",
+            "category": "Accessories",
+            "images": [
+                "5b869015449a4d62e61c57be.jpg"
+            ],
+            "updatedAt": "2018-10-25T04:20:39.259Z"
+        },
+        {
+            "_id": "5b602e56fc55693014a383e7",
+            "discountedPrice": 695,
+            "price": 695,
+            "productName": "Scott Royal blue with white tip T shirt",
+            "subCategory": "Others",
+            "category": "Accessories",
+            "images": [
+                "5b602e13fc55693014a383e6.jpg"
+            ],
+            "updatedAt": "2018-10-25T04:20:39.227Z"
+        },
+        {
+            "_id": "5b603070fc55693014a383eb",
+            "discountedPrice": 695,
+            "price": 695,
+            "productName": "Scott black with red tip T shirt",
+            "subCategory": "Others",
+            "category": "Accessories",
+            "images": [
+                "5b603068fc55693014a383ea.jpg"
+            ],
+            "updatedAt": "2018-10-25T04:20:39.228Z"
+        },
+        {
+            "_id": "5b603201fc55693014a383ed",
+            "discountedPrice": 695,
+            "price": 695,
+            "subCategory": "Others",
+            "category": "Accessories",
+            "productName": "Scott bottle green with white tip T shirt",
+            "images": [
+                "5b6031fefc55693014a383ec.jpg"
+            ],
+            "updatedAt": "2018-10-25T04:20:39.228Z"
+        },
+        {
+            "_id": "5b603266fc55693014a383ef",
+            "discountedPrice": 695,
+            "price": 695,
+            "productName": "Scott white with red tip T shirt",
+            "subCategory": "Others",
+            "category": "Accessories",
+            "images": [
+                "5b60325efc55693014a383ee.jpg"
+            ],
+            "updatedAt": "2018-10-25T04:20:39.229Z"
+        },
+        {
+            "_id": "5b6032e7fc55693014a383f1",
+            "discountedPrice": 695,
+            "price": 695,
+            "productName": "Scott white with blue tip T shirt",
+            "subCategory": "Others",
+            "category": "Accessories",
+            "images": [
+                "5b6032e2fc55693014a383f0.jpg"
+            ],
+            "updatedAt": "2018-10-25T04:20:39.229Z"
+        },
+        {
+            "_id": "5b60337ffc55693014a383f3",
+            "discountedPrice": 695,
+            "price": 695,
+            "productName": "Scott purple with white tip T shirt",
+            "subCategory": "Others",
+            "category": "Accessories",
+            "images": [
+                "5b603377fc55693014a383f2.jpg"
+            ],
+            "updatedAt": "2018-10-25T04:20:39.232Z"
+        },
+        {
+            "_id": "5b6033ebfc55693014a383f5",
+            "discountedPrice": 695,
+            "price": 695,
+            "productName": "Scott black with blue tip T shirt",
+            "subCategory": "Others",
+            "category": "Accessories",
+            "images": [
+                "5b6033e6fc55693014a383f4.jpg"
+            ],
+            "updatedAt": "2018-10-25T04:20:39.232Z"
+        },
+        {
+            "_id": "5b60345cfc55693014a383f7",
+            "discountedPrice": 695,
+            "price": 695,
+            "productName": "Scott apple green T shirt",
+            "subCategory": "Others",
+            "category": "Accessories",
+            "images": [
+                "5b603458fc55693014a383f6.jpg"
+            ],
+            "updatedAt": "2018-10-25T04:20:39.233Z"
+        },
+        {
+            "_id": "5b603655fc55693014a383ff",
+            "discountedPrice": 695,
+            "price": 695,
+            "productName": "Scott beige with brown tip T shirt",
+            "subCategory": "Others",
+            "category": "Accessories",
+            "images": [],
+            "updatedAt": "2019-06-10T12:41:17.719Z"
+        }
+    ]
+}

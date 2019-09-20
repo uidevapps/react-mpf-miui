@@ -47,7 +47,6 @@ class LoginForm extends Component {
             this.props.history.push("/main");
           } else {
             this.setState({ open: true });
-            console.log("NO PSG DATA AVAILABLE");
           }
         })
         .catch(error => {

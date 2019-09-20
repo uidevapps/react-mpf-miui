@@ -1,86 +1,49 @@
-import React, { Component } from "react";
-import Container from "@material-ui/core/Container";
-import { withStyles } from "@material-ui/core/styles";
-import { accessoriesViewStyles  } from "./AccessoriesStyles";
-import Grid from "@material-ui/core/Grid";
+import React from "react";
+
+import { useStyles } from "./styles";
 import Paper from "@material-ui/core/Paper";
 import brandLogo from "../../../../../assets/imgs/mpflogo.png";
-import Hidden from "@material-ui/core/Hidden";
 import Typography from "@material-ui/core/Typography";
-import AccessoriesCard from "./accessoriesCard/accessCard";
 import qrcCOde from "../../../../../assets/imgs/shirts-qr-code.png";
 import MaxineFooter from "../../../../../components/ui/maxineFooter/MaxineFooter";
+import MaxineHeaderComponent from "../shared/header/Header";
+import DividerComponent from "../shared/divider/Divider";
+import MaxineContainer from "../shared/container/Container";
+import ProductGridComponent from "../shared/productGrid/ProductGrid";
+import { SECONDARY_COLOR } from "../../../../../theme/colors";
 
-class Shirts extends Component {
-  render() {
-    const ref = React.createRef();
-    const { classes } = this.props;
-    const { data } = this.props;
-    console.log("Accessories Data", data);
-    return (
-      <Container maxWidth="lg" ref={ref} className={classes.root}>
-        <div className={classes.styleContainer}>
-          <Paper className={classes.paper}>
-            <Grid container spacing={3}>
-              <Grid item xs={false} lg={2} md={2} sm={2}>
-                <Hidden xsDown>
-                  <div
-                    className={classes.brandLogo}
-                    style={{ backgroundImage: `url(${brandLogo})` }}
-                  ></div>
-                </Hidden>
-              </Grid>
-              <Grid item xs={12} lg={10} md={10} sm={10}>
-                <Typography variant="h2" component="h2" className={classes.h2}>
-                  RECOMMENDED{" "}
-                  <span className={classes.brandFontColor}> ACCESSORIES</span>
-                </Typography>
-                <Typography
-                  variant="subtitle2"
-                  component="p"
-                  color="textSecondary"
-                >
-                  Here are our team of experts (Image Consultants, Stylists and
-                  Master Tailors) curated an exclusive styling recommendation
-                  and outfit collection that is just perfect for you.
-                </Typography>
-              </Grid>
-              <Grid item xs={12}>
-                <div className={classes.dividerLine}></div>
-              </Grid>
-            </Grid>
-            <Grid container spacing={2} className={classes.mainContainer}>
-              {data.map(item => (
-                <Grid item xs={6} md={4} lg={4} sm={4} key={item._id}>
-                  <AccessoriesCard imgUrl={item.image} title={item.brand} dec={item.name} />
-                </Grid>
-              ))}
-              <Grid item xs={6} md={4} lg={4} sm={4}>
-                <div className={classes.qrcCode}>
-                  <img src={qrcCOde} alt="qrc" className={classes.qrcImage} />
-                  <div className={classes.qrContent}>
-                    <Typography
-                      variant="subtitle2"
-                      component="p"
-                      color="textSecondary"
-                    >
-                      1. Open your app <br/>
-                      2. Point your camera <br/>
-                      3. Browser and shop
-                    </Typography>
-                  </div>
-                </div>
-              </Grid>
-              <Grid item xs={12}>
-                <div className={classes.dividerLine}></div>
-              </Grid>
-            </Grid>
-            <MaxineFooter pageNo="05"/>
-          </Paper>
-        </div>
-      </Container>
-    );
-  }
-}
+const Accessories = props => {
+  const { data } = props;
+  const classes = useStyles();
+  return (
+    <MaxineContainer>
+      <div className={classes.styleContainer}>
+        <Paper className={classes.paper}>
+          <MaxineHeaderComponent
+            gridItemSpacing={3}
+            image={brandLogo}
+            textPrimary="RECOMMENDED"
+            textSecondary="SHIRTS"
+          >
+            <Typography variant="subtitle2" component="p" color="textSecondary">
+              Here are our team of experts (Image Consultants, Stylists and
+              Master Tailors) curated an exclusive styling recommendation and
+              outfit collection that is just perfect for you.
+            </Typography>
+          </MaxineHeaderComponent>
+          <DividerComponent minHeight="3px" color={SECONDARY_COLOR} />
+          <ProductGridComponent
+            cardType="accessories"
+            cardSpacing={2}
+            data={data}
+            qrcImage={qrcCOde}
+          />
+          <DividerComponent minHeight="3px" color={SECONDARY_COLOR} />
+          <MaxineFooter pageNo="05" />
+        </Paper>
+      </div>
+    </MaxineContainer>
+  );
+};
 
-export default withStyles(accessoriesViewStyles)(Shirts);
+export default Accessories;

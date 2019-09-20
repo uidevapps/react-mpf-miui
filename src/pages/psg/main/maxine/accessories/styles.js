@@ -1,4 +1,6 @@
-export const accessoriesViewStyles = theme => ({
+import { makeStyles } from "@material-ui/core/styles";
+
+export const useStyles = makeStyles(theme => ({
   root: {
     [theme.breakpoints.down("xs")]: {
       paddingLeft: theme.spacing(0),
@@ -61,10 +63,10 @@ export const accessoriesViewStyles = theme => ({
     textAlign: "center",
     overFlow: "hidden"
   },
-  qrcImage:{
-    width:'135px'
+  qrcImage: {
+    width: "135px"
   },
-  qrContent:{
-    textAlign:'center'
+  qrContent: {
+    textAlign: "center"
   }
-});
+}));

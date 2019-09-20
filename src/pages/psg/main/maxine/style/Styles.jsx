@@ -11,14 +11,15 @@ import { styleForYou, colorsData } from "../../../../../data/RawData";
 import collerImage from "../../../../../assets/imgs/collers.png";
 import lapel from "../../../../../assets/imgs/Lapel.jpg";
 import Hidden from "@material-ui/core/Hidden";
+
 import MaxineFooter from "../../../../../components/ui/maxineFooter/MaxineFooter";
 
 class Styles extends Component {
   render() {
     const ref = React.createRef();
     const data = styleForYou;
-    const colorData = colorsData;
     const { classes } = this.props;
+
     return (
       <Container maxWidth="lg" ref={ref} className={classes.root}>
         <div className={classes.styleContainer}>
@@ -72,7 +73,7 @@ class Styles extends Component {
                     spacing={1}
                     className={classes.colorContainer}
                   >
-                    {colorData.warmColors.map(color => (
+                    {colorsData.warmColors.map(color => (
                       <Grid item xs={3} sm={3} lg={3} md={3} key={color.id}>
                         <div
                           className={classes.colorBox}
@@ -96,7 +97,7 @@ class Styles extends Component {
                     spacing={1}
                     className={classes.colorContainer}
                   >
-                    {colorData.avoidColors.map(color => (
+                    {colorsData.avoidColors.map(color => (
                       <Grid item xs={3} sm={3} lg={3} md={3} key={color.id}>
                         <div
                           className={classes.colorBox}

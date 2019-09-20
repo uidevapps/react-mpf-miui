@@ -7,13 +7,10 @@ import { useStyles } from "./styles";
 
 const MaxineCardComponent = props => {
   const classes = useStyles();
+  const { imgUrl, title, subTitle } = props;
   return (
     <Card className={classes.card} elevation={0}>
-      <CardMedia
-        className={classes.media}
-        image={props.imgUrl}
-        title={props.name}
-      />
+      <CardMedia className={classes.media} image={imgUrl} title={subTitle} />
       <CardContent>
         <Typography
           variant="h6"
@@ -22,7 +19,7 @@ const MaxineCardComponent = props => {
           align="center"
           className={classes.h6}
         >
-          PRODUCT ID
+          {title}
         </Typography>
         <Typography
           variant="subtitle2"
@@ -30,7 +27,7 @@ const MaxineCardComponent = props => {
           component="p"
           align="center"
         >
-          {props.productId}
+          {subTitle}
         </Typography>
       </CardContent>
     </Card>

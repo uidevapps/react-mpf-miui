@@ -51,41 +51,13 @@ class ProfilePage extends React.Component {
             fristName: profileData["firstName"],
             lastName: profileData["lastName"],
             image: profileData["images"][0],
-            brief: profileData["brief"],
-            faceType: {
-              name: profileData["faceType"].name,
-              image: profileData["faceType"].image
-            },
-            facialLook: {
-              name: profileData["facialLook"].name,
-              image: profileData["facialLook"].image
-            },
-            skinType: {
-              image: profileData["skinType"].image,
-              name: profileData["skinType"].name
-            },
-            clothingStyle: {
-              image: profileData["clothingStyle"].image,
-              name: profileData["clothingStyle"].name
-            },
-            bodyType: {
-              image: profileData["bodyType"].image,
-              name: profileData["bodyType"].name
-            },
-            existingWadrobeMix: {
-              image: profileData["existingWadrobeMix"].image,
-              name: profileData["existingWadrobeMix"].name
-            }
+            brief: profileData["brief"]
           }
         });
-       
       })
-      .catch(error => {
-       
-      });
+      .catch(error => {});
   }
   render() {
-    
     let renderData = null;
     if (this.state.profile) {
       renderData = (
@@ -93,7 +65,9 @@ class ProfilePage extends React.Component {
           <Container maxWidth="lg">
             <React.Fragment>
               <HeaderTextComponent
-                title={`${this.state.profile["fristName"]} ${this.state.profile["lastName"]}'s Profile`}
+                title={`${this.state.profile["fristName"]} ${
+                  this.state.profile["lastName"]
+                }'s Profile`}
                 subTitle="My Perfect Fit Personal Style Guide"
               />
             </React.Fragment>
@@ -103,7 +77,7 @@ class ProfilePage extends React.Component {
                   <ProfileImageComponent imgUrl={this.state.profile["image"]} />
                 </Grid>
                 <Grid item md={7} lg={7} xs={12} sm={6}>
-                  <AboutMeComponent info={this.state.profile['brief']} />
+                  <AboutMeComponent info={this.state.profile["brief"]} />
                 </Grid>
               </Grid>
             </Paper>

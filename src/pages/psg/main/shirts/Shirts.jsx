@@ -10,7 +10,7 @@ class Shirts extends React.Component {
     axios
       .get("http://15.206.16.194:3000/v2/api/psg/user/mobile/9959475551")
       .then(data => {
-         console.log(data["data"]["details"][0])
+        
         this.setState({ shirts: data["data"]["details"][0]["recShirts"] });
       })
       .catch(error => {

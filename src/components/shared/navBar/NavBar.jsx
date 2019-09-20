@@ -6,28 +6,42 @@ import Button from "@material-ui/core/Button";
 import Hidden from "@material-ui/core/Hidden";
 import { withRouter } from "react-router-dom";
 import brandLogo from "../../../assets/imgs/MPF_logo.png";
-import AccountCircle from "@material-ui/icons/AccountCircle";
+import MoreVertIcon from '@material-ui/icons/MoreVert';
 import { navBarStyles } from "./NavBarStyles";
 import axios from "axios";
 import ProgressBar from "../../ui/progressbar/ProgressBar";
 import Modal from "@material-ui/core/Modal";
 import Backdrop from "@material-ui/core/Backdrop";
+import Menu from "@material-ui/core/Menu";
+import MenuItem from "@material-ui/core/MenuItem";
+
 
 const TopAppBar = props => {
   const [completed, setCompleted] = React.useState(0);
   const [open, setOpen] = React.useState(false);
+  const [anchorEl, setAnchorEl] = React.useState(null);
   const [msg, setMsg] = React.useState("PREPARING PDF");
 
   const handleClose = () => {
     setOpen(false);
   };
 
+  function handleClick(event) {
+    setAnchorEl(event.currentTarget);
+  }
+
+  function handleMenuClose() {
+    setAnchorEl(null);
+  }
+
   const handleRoute = () => {
+    setAnchorEl(null);
     props.history.push("/main/pdfview");
   };
 
   const downloadPdf = () => {
-    const id = "5d7f1c9581bc721c18270b06";
+    setAnchorEl(null);
+    const id = "5d825a809926cb372cedcfd6";
     setOpen(true);
     axios({
       url: `http://15.206.16.194:3000/v2/api/psg/generate/${id}/pdf`,
@@ -52,7 +66,6 @@ const TopAppBar = props => {
       } // important
     })
       .then(response => {
-        console.log(response);
         const url = window.URL.createObjectURL(new Blob([response.data]));
         const link = document.createElement("a");
         link.href = url;
@@ -117,14 +130,17 @@ const TopAppBar = props => {
             Download PDF
           </Button>
         </Hidden>
-        <IconButton
-          aria-label="account of current user"
-          aria-controls="menu-appbar"
-          aria-haspopup="true"
-          color="inherit"
-        >
-          <AccountCircle />
-        </IconButton>
+        <Hidden smUp>
+          <IconButton
+            aria-label="account of current user"
+            aria-controls="menu-appbar"
+            aria-haspopup="true"
+            color="inherit"
+            onClick={handleClick}
+          >
+            <MoreVertIcon />
+          </IconButton>
+        </Hidden>
       </Toolbar>
       <Modal
         aria-labelledby="spring-modal-title"
@@ -144,6 +160,16 @@ const TopAppBar = props => {
           <ProgressBar value={completed} />
         </div>
       </Modal>
+      <Menu
+        id="simple-menu"
+        anchorEl={anchorEl}
+        keepMounted
+        open={Boolean(anchorEl)}
+        onClose={handleMenuClose}
+      >
+        <MenuItem onClick={handleRoute}>PSG Viewer</MenuItem>
+        <MenuItem onClick={downloadPdf}> Download PDF</MenuItem>
+      </Menu>
     </AppBar>
   );
 };

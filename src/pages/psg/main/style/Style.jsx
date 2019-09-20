@@ -6,10 +6,12 @@ import Grid from "@material-ui/core/Grid";
 import { useStyles } from "./StylePageStyles";
 import Typography from "@material-ui/core/Typography";
 import CardsComponent from "./card/Cards";
-import { styeData, colorsData } from "../../../../data/RawData";
+import { styeData} from "../../../../data/RawData";
 import collerImg from "../../../../assets/imgs/collers.png";
 import ColorsComponent from "./colors/Colors";
+import {colorsData} from "../../../../data/RawData";
 const StylePage = () => {
+  
   const classes = useStyles();
   return (
     <React.Fragment>

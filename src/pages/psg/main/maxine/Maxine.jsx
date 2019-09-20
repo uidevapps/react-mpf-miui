@@ -13,9 +13,8 @@ const MaxineViewPage = () => {
   const [trousers, updatetrousers] = useState([]);
   const [accessories, updateAccessories] = useState([]);
   const [profile, updateProfile] = useState({});
-
+  // colorData
   useEffect(() => {
-    console.log('data');
     axios
       .get("http://15.206.16.194:3000/v2/api/psg/user/mobile/9959475551")
       .then(data => {
@@ -27,6 +26,7 @@ const MaxineViewPage = () => {
           imageUrl: data["data"]["details"][0]["images"][0],
           info: data["data"]["details"][0]["brief"]
         });
+        
       })
       .catch(error => {});
   }, []);
