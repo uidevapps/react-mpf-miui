@@ -209,7 +209,7 @@ class Contact extends Component {
                   Address
                 </Typography>
                 <Typography
-                  variant="subTitle2"
+                  variant="subtitle2"
                   align="left"
                   component="p"
                   className={classes.h6}
@@ -229,7 +229,7 @@ class Contact extends Component {
                   Contact Us
                 </Typography>
                 <Typography
-                  variant="subTitle2"
+                  variant="subtitle2"
                   align="left"
                   component="p"
                   className={classes.h6}
@@ -237,7 +237,7 @@ class Contact extends Component {
                   https://www.instagram.com/myperfectfitformen/
                 </Typography>
                 <Typography
-                  variant="subTitle2"
+                  variant="subtitle2"
                   align="left"
                   component="p"
                   className={classes.h6}

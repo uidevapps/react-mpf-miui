@@ -1,4 +1,5 @@
-export const profileViewStyles = theme => ({
+import { makeStyles } from "@material-ui/core/styles";
+export const styles = makeStyles(theme => ({
   root:{
     [theme.breakpoints.down("xs")]: {
       paddingLeft: theme.spacing(0),
@@ -60,4 +61,4 @@ export const profileViewStyles = theme => ({
     marginTop:'2rem'
   },
   
-});
+}));

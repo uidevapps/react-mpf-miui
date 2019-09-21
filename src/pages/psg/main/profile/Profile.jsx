@@ -13,32 +13,8 @@ class ProfilePage extends React.Component {
     profile: {
       fristName: "",
       lastName: "",
-      image: "",
-      brief: "",
-      faceType: {
-        image: "",
-        name: ""
-      },
-      facialLook: {
-        image: "",
-        name: ""
-      },
-      skinType: {
-        image: "",
-        name: ""
-      },
-      clothingStyle: {
-        image: "",
-        name: ""
-      },
-      bodyType: {
-        image: "",
-        name: ""
-      },
-      existingWadrobeMix: {
-        image: "",
-        name: ""
-      }
+      image: null,
+      brief: ""
     }
   };
   componentDidMount() {
@@ -71,17 +47,22 @@ class ProfilePage extends React.Component {
                 subTitle="My Perfect Fit Personal Style Guide"
               />
             </React.Fragment>
-            <Paper>
-              <Grid container spacing={0}>
-                <Grid item md={5} lg={5} xs={12} sm={6}>
-                  <ProfileImageComponent imgUrl={this.state.profile["image"]} />
+            {this.state.profile["image"] && (
+              <Paper>
+                <Grid container spacing={0}>
+                  <Grid item md={5} lg={5} xs={12} sm={6}>
+                    <ProfileImageComponent
+                      imgUrl={this.state.profile["image"]}
+                    />
+                  </Grid>
+                  <Grid item md={7} lg={7} xs={12} sm={6}>
+                    <AboutMeComponent info={this.state.profile["brief"]} />
+                  </Grid>
                 </Grid>
-                <Grid item md={7} lg={7} xs={12} sm={6}>
-                  <AboutMeComponent info={this.state.profile["brief"]} />
-                </Grid>
-              </Grid>
-            </Paper>
-            <PersonalInfoComponent />
+              </Paper>
+            )}
+
+            {<PersonalInfoComponent />}
           </Container>
         </React.Fragment>
       );

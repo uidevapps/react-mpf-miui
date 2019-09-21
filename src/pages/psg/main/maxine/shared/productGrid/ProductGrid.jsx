@@ -8,7 +8,6 @@ const ProductGridComponent = props => {
   const classes = useStyles();
   let cardItem = null;
 
-  
   if (cardType === "shirt" || cardType === "trouser") {
     if (data.length > 0) {
       cardItem = (
@@ -45,6 +44,24 @@ const ProductGridComponent = props => {
     }
   }
 
+  if (cardType === "profile") {
+    if (data.length > 0) {
+      cardItem = (
+        <React.Fragment>
+          {data.map((item, index) => (
+            <Grid item xs={6} md={4} lg={4} sm={4} key={index}>
+              <MaxineCardComponent
+                imgUrl={item.imgUrl}
+                title={item.type}
+                subTitle={item.description}
+              />
+            </Grid>
+          ))}
+        </React.Fragment>
+      );
+    }
+  }
+
   return (
     <Grid
       container
@@ -53,9 +70,11 @@ const ProductGridComponent = props => {
     >
       {cardItem}
 
-      <Grid item xs={6} md={4} lg={4} sm={4}>
-        <QRCCardComponent image={props.qrcImage} />
-      </Grid>
+      {props.qrcImage && (
+        <Grid item xs={6} md={4} lg={4} sm={4}>
+          <QRCCardComponent image={props.qrcImage} />
+        </Grid>
+      )}
     </Grid>
   );
 };

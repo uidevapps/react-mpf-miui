@@ -14,8 +14,8 @@ class ProductGrid extends React.Component {
     return (
       <React.Fragment>
         <Grid container spacing={1}>
-          {this.props.productsData.map(item => (
-            <Grid item xs={6} sm={4} md={3} lg={3} key={item.productId}>
+          {this.props.productsData.map((item,index) => (
+            <Grid item xs={6} sm={4} md={3} lg={3} key={index}>
                <UiCard
                 mediaType="img"
                 productTitle={item.name}

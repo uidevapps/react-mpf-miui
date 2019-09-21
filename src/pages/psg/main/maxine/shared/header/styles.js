@@ -1,5 +1,14 @@
 import { makeStyles } from "@material-ui/core/styles";
 export const useStyles = makeStyles(theme => ({
+  profileImage: {
+    width: "150px",
+    minHeight: "175px",
+    position: "relative",
+    backgroundSize: "cover",
+    marginRight: "2rem",
+    backgroundRepeat: "no-repeat",
+    backgroundPosition: "center top"
+  },
   brandLogo: {
     width: "100px",
     minHeight: "100px",
@@ -8,6 +17,17 @@ export const useStyles = makeStyles(theme => ({
     marginRight: "2rem",
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center top"
+  },
+  logo: {
+    position: "absolute",
+    top: "0px",
+    left: "0px",
+    height: "45px",
+    width: "45px"
+  },
+  logoImg: {
+    height: "45px",
+    width: "45px"
   },
   h2: {
     textTransform: "uppercase",
@@ -27,5 +47,5 @@ export const useStyles = makeStyles(theme => ({
     backgroundColor: "rgb(242, 180, 47)",
     marginTop: "1rem",
     marginButtom: "2rem"
-  },
+  }
 }));

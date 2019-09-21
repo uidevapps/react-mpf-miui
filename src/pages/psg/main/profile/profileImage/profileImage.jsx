@@ -7,11 +7,17 @@ const ProfileImageComponent = props => {
     <Card square={true} elevation={0}>
       <CardActionArea>
         <CardMedia
+          image={props.imgUrl}
+          title={props.type}
+          component="img"
+          height="250"
+        />
+        {/* <CardMedia
           component="img"
           image={props.imgUrl}
           title="Contemplative Reptile"
           height="250"
-        />
+        /> */}
       </CardActionArea>
     </Card>
   );
