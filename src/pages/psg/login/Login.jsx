@@ -8,7 +8,6 @@ import HeadLinesComponent from "./headLines/HeadLines";
 import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 
-
 const LoginPage = props => {
   const [value, setValue] = React.useState(0);
   const handleChange = (event, newValue) => {
@@ -33,10 +32,10 @@ const LoginPage = props => {
               textColor="primary"
               onChange={handleChange}
               aria-label="disabled tabs example"
-              style={{marginBottom:"1.5rem"}}
+              style={{ marginBottom: "1.5rem" }}
             >
-              <Tab label="Login" style={{minWidth:"50%"}} />
-              <Tab label="Sign up" style={{minWidth:"50%"}} />
+              <Tab label="Login" style={{ minWidth: "50%" }} />
+              <Tab label="Sign up" style={{ minWidth: "50%" }} />
             </Tabs>
           </Paper>
           <LoginForm />

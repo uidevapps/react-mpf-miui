@@ -10,13 +10,14 @@ import brandLogo from "../../../assets/imgs/MPF_logo.png";
 
 const SideDrawer = props => {
   const classes = sideDrawerStyles();
+
   const [open, setOpen] = React.useState(true);
   function handleClick() {
     setOpen(!open);
   }
   return (
     <Drawer
-      variant="permanent"
+      variant={props.variant}
       classes={{
         paper: clsx(
           classes.drawerPaper,
@@ -26,7 +27,9 @@ const SideDrawer = props => {
       open={props.open}
     >
       <div className={classes.toolbarIcon}>
-        {props.open && <img src={brandLogo} alt="logo" className={classes.logo} />}
+        {props.open && (
+          <img src={brandLogo} alt="logo" className={classes.logo} />
+        )}
         <IconButton onClick={props.handleDrawerClose}>
           <ChevronLeftIcon />
         </IconButton>

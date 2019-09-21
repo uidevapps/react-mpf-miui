@@ -3,11 +3,8 @@ import "react-responsive-ui/style.css";
 import "react-phone-number-input/style.css";
 import Button from "@material-ui/core/Button";
 import { withRouter } from "react-router-dom";
-import { loginFormStyles } from "./FormStyles";
+import { loginFormStyles } from "./styles";
 import { withStyles } from "@material-ui/core/styles";
-import { connect } from "react-redux";
-import { reduxForm } from "redux-form";
-import { userLogin } from "./formActions";
 import PhoneInput from "react-phone-number-input/react-responsive-ui";
 import { isValidPhoneNumber, parsePhoneNumber } from "react-phone-number-input";
 import flags from "react-phone-number-input/flags";
@@ -15,13 +12,6 @@ import axios from "axios";
 import Snackbar from "@material-ui/core/Snackbar";
 import IconButton from "@material-ui/core/IconButton";
 import CloseIcon from "@material-ui/icons/Close";
-
-const mapState = state => ({
-  data: state.loginForm.data
-});
-const actions = {
-  userLogin
-};
 
 class LoginForm extends Component {
   state = {
@@ -115,9 +105,4 @@ class LoginForm extends Component {
   }
 }
 
-export default withRouter(
-  connect(
-    mapState,
-    actions
-  )(reduxForm({ form: "loginForm" })(withStyles(loginFormStyles)(LoginForm)))
-);
+export default withRouter(withStyles(loginFormStyles)(LoginForm));

@@ -12,12 +12,6 @@ const ProfileImageComponent = props => {
           component="img"
           height="250"
         />
-        {/* <CardMedia
-          component="img"
-          image={props.imgUrl}
-          title="Contemplative Reptile"
-          height="250"
-        /> */}
       </CardActionArea>
     </Card>
   );
